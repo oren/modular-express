@@ -10,5 +10,5 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
 app.get('/', function(req, res){
-  res.template('index');
+  res.render('index');
 });
