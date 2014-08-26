@@ -5,6 +5,8 @@ var app = module.exports = express();
 var pub = __dirname + '/public';
 app.use(express.static(pub));
 
+console.log('in admin', app.locals.foo);
+
 // Optional since express defaults to CWD/views
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
